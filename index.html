@@ -6,9 +6,29 @@
      <img src="WebBanner2026.png" alt="Banner" width="1200" height="300">
       <h1><b>ENG0018 Computer Laboratory 2026/27</b></h1>
       <h2>Student URN: 6969684</h2>
+    <title>Change Button Colour</title>
     <hr>
     <h2> <style=”font-family:calibri:”><b>Conference paper: Bridge Deck Repairs</b></h2>
     <hr>
+      <body>
+      <button id="colorButton">Click me to change colour</button>
+
+      <script>
+      // Get a reference to the button element 
+      var button = document.getElementById("colorButton");
+
+      // Function to change the button color 
+        function changeColor() { 
+            // Generate a random color (hexadecimal) 
+            var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+
+            // Set the button's background color to the random color 
+            button.style.backgroundColor = randomColor; 
+        }
+       // Add a click event listener to the button 
+        button.addEventListener("click", changeColor); 
+    </script> 
+</body>
 
 
     <!style for tables>
